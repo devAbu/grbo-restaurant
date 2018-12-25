@@ -1,12 +1,6 @@
 <?php 
 
-$hostname = "localhost";
-$username = "root";
-$pass = "";
-$dataBaseName = "restaurant";
-
-$connection = mysqli_connect($hostname, $username, $pass);
-$selection = mysqli_select_db($connection, $dataBaseName);
+require 'config.php';
 
 $email = $_POST['email'];
 $password = $_POST['password'];
