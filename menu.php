@@ -163,7 +163,6 @@
 			var drinkQuantity = $("#drinkQuantity").val();
 			var drinkPrice = $("#drinkPrice").val();
 			var fullName = $("#fullName").val();
-			var cardNum = $("#cardNum").val();
 
 			if (dateVisit  == ""){
 				$("#poruka").addClass('alert-danger');
@@ -193,14 +192,10 @@
 				$("#poruka").addClass('alert-danger');
 				$("#poruka").html('<strong>Error</strong> Please enter your name.');
 				$("#poruka").slideDown(500).delay(1000).slideUp(500);
-			}else if(cardNum ==""){
-				$("#poruka").addClass('alert-danger');
-				$("#poruka").html('<strong>Error</strong> Please enter your card number.');
-				$("#poruka").slideDown(500).delay(1000).slideUp(500);
 			}else{
 				$.ajax({
 			
-					url: "./dataMenu.php?task=serve&dateVisit="+dateVisit+"&timeVisit="+timeVisit+"&foodNum="+foodNum+"&foodQuantity="+foodQuantity+"&foodPrice="+foodPrice+"&drinkNum="+drinkNum+"&drinkQuantity="+drinkQuantity+"&drinkPrice="+drinkPrice+"&fullName="+fullName+"&cardNum="+cardNum,
+					url: "./dataMenu.php?task=serve&dateVisit="+dateVisit+"&timeVisit="+timeVisit+"&foodNum="+foodNum+"&foodQuantity="+foodQuantity+"&foodPrice="+foodPrice+"&drinkNum="+drinkNum+"&drinkQuantity="+drinkQuantity+"&drinkPrice="+drinkPrice+"&fullName="+fullName,
                     success: function (data) {
 						if(data == 'SERVE'){
 							$("#poruka").addClass('alert-success');
