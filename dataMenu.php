@@ -21,11 +21,10 @@ $drinkNum =$_REQUEST["drinkNum"];
 $drinkQuantity =$_REQUEST["drinkQuantity"];
 $drinkPrice =$_REQUEST["drinkPrice"];
 $fullName =$_REQUEST["fullName"];
-$cardNum =$_REQUEST["cardNum"];
 
 
     if ($_REQUEST['task'] == "serve") {
-		$query = "INSERT INTO menu (dateVisit, timeVisit, foodNum, foodQuantity, foodPrice, drinkNum, drinkQuantity, drinkPrice, fullName, cardNum) VALUES ('$dateVisit','$timeVisit','$foodNum','$foodQuantity','$foodPrice','$drinkNum','$drinkQuantity', '$drinkPrice', '$fullName', '$cardNum')";
+		$query = "INSERT INTO menu (dateVisit, timeVisit, foodNum, foodQuantity, foodPrice, drinkNum, drinkQuantity, drinkPrice, fullName) VALUES ('$dateVisit','$timeVisit','$foodNum','$foodQuantity','$foodPrice','$drinkNum','$drinkQuantity', '$drinkPrice', '$fullName')";
         
             $response = @mysqli_query($dbc, $query);
             if ($response) {
