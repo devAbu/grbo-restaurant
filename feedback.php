@@ -14,7 +14,7 @@
                 <img src="images/logo.jpg" alt="logo">
                 <a href="index.html"><input type="button" value="Home" class="btn btn-primary" style="margin-top:-180px;"></a>
                 <a href="menu.php"><input type="button" value="Menu" class="btn btn-primary" style="margin-top:-180px;"></a>
-                <a href="contact.html"><input type="button" value="Contact & Place" class="btn btn-primary" style="margin-top:-180px;"></a>
+                <a href="contact.php"><input type="button" value="Contact & Place" class="btn btn-primary" style="margin-top:-180px;"></a>
                 <a href="feedback.php"><input type="button" value="Feedback" class="btn btn-primary" style="margin-top:-180px;"></a>
                 <a href="signup.php"><input type="button" value="Sign up for free" class="btn btn-primary" style="float:right;margin-right:30px;margin-top:3px;"></a>
         <a href="log.php"><input type="button" value="Login" class="btn btn-primary" style="float:right;margin-right:30px;margin-top:3px;"></a>
