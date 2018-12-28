@@ -11,7 +11,7 @@
 <body style="background-color:rgb(199, 253, 247);">
         <header>
                 <img src="images/logo.jpg" alt="logo">
-                <a href="index.php"><input type="button" value="Home" class="btn btn-primary" style="margin-top:-180px;"></a>
+                <a href="index.html"><input type="button" value="Home" class="btn btn-primary" style="margin-top:-180px;"></a>
                 <a href="menu.php"><input type="button" value="Menu" class="btn btn-primary" style="margin-top:-180px;"></a>
                 <a href="contact.php"><input type="button" value="Contact & Place" class="btn btn-primary" style="margin-top:-180px;"></a>
                 <a href="feedback.php"><input type="button" value="Feedback" class="btn btn-primary" style="margin-top:-180px;"></a>
